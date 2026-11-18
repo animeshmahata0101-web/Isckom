@@ -1,0 +1,208 @@
+/* ==========================================================================
+   ISKCON JHARGRAM - SACRED VEDIC DESIGN SYSTEM
+   Crafted with ui-ux-pro-max: Human-Centered, Culturally Authentic Vaishnava Aesthetics
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Rozha+One&display=swap');
+
+:root {
+  /* Sacred Color Tokens */
+  --color-kesariya-deep: #B43403;    /* Deep sacred saffron */
+  --color-kesariya-gold: #EA580C;    /* Bright vibrant kesariya */
+  --color-gold: #D4AF37;             /* Temple ceremonial gold */
+  --color-gold-light: #FDE68A;       /* Soft gold shimmer */
+  --color-gold-dark: #92400E;        /* Antique bronze gold */
+  --color-rosewood: #22120C;         /* Sacred temple rosewood / mahogany */
+  --color-rosewood-soft: #382117;    /* Warm dark container */
+  --color-parchment: #FCF9F2;        /* Sandalwood cream base */
+  --color-parchment-deep: #F5EEDB;   /* Muted warm section bg */
+  --color-peacock: #0F766E;          /* Sri Krishna peacock feather teal */
+  --color-peacock-light: #14B8A6;    /* Vibrant accent */
+  --color-tulasi: #15803D;           /* Sacred Tulasi green */
+  --color-charcoal: #1C1917;         /* Deep readable body text */
+  --color-muted: #57534E;            /* Subdued stone text */
+  --color-card-border: rgba(212, 175, 55, 0.22);
+
+  /* Fonts */
+  --font-serif: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-devanagari: 'Rozha One', 'Cinzel', serif;
+
+  /* Shadows */
+  --shadow-vedic: 0 10px 30px -5px rgba(34, 18, 12, 0.08), 0 4px 6px -2px rgba(34, 18, 12, 0.04);
+  --shadow-gold: 0 10px 25px -3px rgba(212, 175, 55, 0.25);
+  --shadow-card: 0 4px 20px rgba(180, 52, 3, 0.06);
+}
+
+/* Base resets & typography */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-parchment);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+.font-sanskrit {
+  font-family: var(--font-devanagari);
+}
+
+/* Subtle Vedic Watermark Patterns */
+.bg-vedic-pattern {
+  background-color: var(--color-parchment);
+  background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-temple-dark {
+  background-color: var(--color-rosewood);
+  background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+/* Gold Gradient Borders & Accents */
+.border-gold-gradient {
+  border-image: linear-gradient(to right, #D4AF37, #FDE68A, #D4AF37) 1;
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.35);
+}
+
+.gold-text-shimmer {
+  background: linear-gradient(135deg, #FFFBEB 0%, #FDE68A 50%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #B43403 0%, #D97706 50%, #B45309 100%);
+}
+
+.kesariya-gradient-btn {
+  background: linear-gradient(135deg, #C2410C 0%, #EA580C 100%);
+  color: #FFFFFF;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(194, 65, 12, 0.3);
+}
+
+.kesariya-gradient-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(194, 65, 12, 0.45);
+  background: linear-gradient(135deg, #9A3412 0%, #C2410C 100%);
+}
+
+.kesariya-gradient-btn:active {
+  transform: translateY(0);
+}
+
+/* Interactive Devotional Card Polish */
+.devotional-card {
+  background: #FFFFFF;
+  border: 1px solid var(--color-card-border);
+  border-radius: 1rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: var(--shadow-vedic);
+}
+
+.devotional-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 16px 32px -8px rgba(180, 52, 3, 0.12), 0 0 0 1px rgba(212, 175, 55, 0.3);
+}
+
+/* Pushpanjali (Flower Shower) Floating Petals */
+.petal {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  user-select: none;
+  animation: fallDown linear forwards;
+}
+
+@keyframes fallDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh) rotate(360deg) scale(0.6);
+  }
+}
+
+/* Pulse animation for Live Aarti */
+@keyframes sacredPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.15);
+  }
+}
+
+.live-pulse {
+  animation: sacredPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-parchment-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B43403;
+}
+
+/* Focus styles for keyboard accessibility (WCAG AA compliant) */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--color-kesariya-gold);
+  outline-offset: 2px;
+}
+
+/* Touch targets >= 44px */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Print styles for Seva Receipts */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-receipt, #printable-receipt * {
+    visibility: visible;
+  }
+  #printable-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+}
