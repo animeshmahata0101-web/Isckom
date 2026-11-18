@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Deity Darshan | ISKCON Jhargram</title>
+  <meta name="description" content="Divine daily darshan of Sri Sri Radha Madhava, Sri Sri Gaura Nitai, and Sri Jagannath Baladeva Subhadra at ISKCON Jhargram, West Bengal.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-vedic-pattern text-stone-800 antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- Dynamic Live Announcement Banner -->
+  <div id="top-announcement-banner" class="bg-stone-900 text-amber-100 border-b border-amber-900/40"></div>
+
+  <!-- Top Utilities Bar -->
+  <div class="bg-stone-950 text-stone-300 text-xs py-2 px-4 border-b border-amber-900/30">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center text-amber-400 font-medium">
+          <svg class="w-3.5 h-3.5 mr-1 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+          Jhargram, West Bengal, India
+        </span>
+        <span class="text-stone-500">|</span>
+        <span class="text-stone-400">Sri Sri Radha Madhava Mandir</span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <a href="https://www.facebook.com/share/18m7z58HY5/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 flex items-center transition-colors">
+          Facebook Page
+        </a>
+        <span class="text-stone-600">•</span>
+        <a href="https://share.google/XQ5Nl7fRtkdQHCqpt" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 flex items-center transition-colors">
+          Google Location
+        </a>
+        <span class="text-stone-600">•</span>
+        <a href="admin.html" class="text-amber-400/90 hover:text-amber-300 font-semibold">Admin</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Sacred Navigation -->
+  <header class="sticky top-0 z-50 bg-[#FCF9F2]/95 backdrop-blur-md border-b border-amber-200/70 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-11 h-11 rounded-full bg-amber-600 flex items-center justify-center text-white font-serif font-bold text-lg shadow">ॐ</div>
+          <div>
+            <span class="block text-xl font-black font-serif text-stone-900">ISKCON JHARGRAM</span>
+            <span class="block text-[10px] text-stone-500 font-medium">Daily Divine Darshan</span>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center space-x-1 font-medium text-stone-700 text-sm">
+          <a href="index.html" class="px-3 py-2 hover:text-amber-800 transition-colors">Home</a>
+          <a href="darshan.html" class="px-3 py-2 text-amber-800 font-bold border-b-2 border-amber-600">Daily Darshan</a>
+          <a href="events.html" class="px-3 py-2 hover:text-amber-800 transition-colors">Festivals & Events</a>
+          <a href="prabhupada.html" class="px-3 py-2 hover:text-amber-800 transition-colors">Srila Prabhupada</a>
+          <a href="seva.html" class="px-3 py-2 hover:text-amber-800 transition-colors">Seva & Offerings</a>
+          <a href="visit.html" class="px-3 py-2 hover:text-amber-800 transition-colors">Plan Your Visit</a>
+        </nav>
+        <div class="hidden sm:flex items-center space-x-3">
+          <button class="pushpanjali-trigger kesariya-gradient-btn px-4 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider shadow">
+            🌸 Offer Flowers
+          </button>
+        </div>
+        <div class="lg:hidden flex items-center">
+          <button id="mobile-menu-toggle" class="p-2 rounded-lg text-stone-700 hover:text-amber-800 touch-target" aria-label="Toggle Navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-nav-drawer" class="hidden lg:hidden bg-[#FAF5EC] border-b border-amber-200 px-4 pt-3 pb-6 space-y-3">
+      <a href="index.html" class="block px-3 py-2 rounded-md font-medium text-stone-700">Home</a>
+      <a href="darshan.html" class="block px-3 py-2 rounded-md font-bold text-amber-900 bg-amber-100">Daily Deity Darshan</a>
+      <a href="events.html" class="block px-3 py-2 rounded-md font-medium text-stone-700">Festivals & Events</a>
+      <a href="prabhupada.html" class="block px-3 py-2 rounded-md font-medium text-stone-700">Srila Prabhupada</a>
+      <a href="seva.html" class="block px-3 py-2 rounded-md font-medium text-stone-700">Seva & Offerings</a>
+      <a href="visit.html" class="block px-3 py-2 rounded-md font-medium text-stone-700">Plan Your Visit</a>
+      <a href="admin.html" class="block px-3 py-2 rounded-md font-semibold text-amber-800">Admin Portal</a>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="bg-temple-dark text-white py-14 border-b-4 border-amber-500 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+      <div class="inline-flex items-center px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
+        <span>वेणूं क्वणन्तमरविन्ददलायताक्षं बर्हावतंसमसिताम्बुदसुन्दराङ्गम्</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-black font-serif">Daily Deity Darshan</h1>
+      <p class="text-stone-300 text-sm max-w-2xl mx-auto font-light">
+        "One who sees the Deity form of the Lord with devotion and love becomes purified of all material contamination." — Śrīmad-Bhāgavatam
+      </p>
+      <div class="pt-2">
+        <button class="pushpanjali-trigger px-5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-lg transition-transform hover:scale-105">
+          🌸 Click to Shower Petals (পুষ্পাঞ্জলি অর্পণ)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Darshan Gallery Section -->
+  <main class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Deity 1: Sri Sri Radha Madhava -->
+      <div class="devotional-card overflow-hidden flex flex-col justify-between">
+        <div class="relative h-80 overflow-hidden bg-stone-900">
+          <img src="https://images.unsplash.com/photo-1609137144822-4217730e7df7?auto=format&fit=crop&w=800&q=80" alt="Sri Sri Radha Madhava" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-lg text-amber-300 text-xs font-bold">
+            Presiding Deities
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h2 class="text-2xl font-bold font-serif text-stone-900 mb-2">Sri Sri Radha Madhava</h2>
+            <p class="text-xs text-amber-800 font-semibold mb-3">Shringar Darshan • Morning Royal Attire</p>
+            <p class="text-stone-600 text-xs leading-relaxed mb-4">
+              Sri Sri Radha Madhava shower their eternal transcendental mercy upon all devotees visiting Jhargram. Adorned in silk and fragrant fresh tulasi and garland offerings.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-amber-100 flex items-center justify-between">
+            <button class="pushpanjali-trigger text-xs text-amber-700 hover:text-amber-900 font-bold flex items-center">
+              <span>🌸 Shower Pushpanjali</span>
+            </button>
+            <a href="seva.html" class="text-xs bg-amber-100 text-amber-900 hover:bg-amber-200 px-3 py-1.5 rounded-md font-semibold">Sponsor Garland</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deity 2: Sri Sri Gaura Nitai -->
+      <div class="devotional-card overflow-hidden flex flex-col justify-between">
+        <div class="relative h-80 overflow-hidden bg-stone-900">
+          <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=800&q=80" alt="Sri Sri Gaura Nitai" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-lg text-amber-300 text-xs font-bold">
+            Pancha-Tattva
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h2 class="text-2xl font-bold font-serif text-stone-900 mb-2">Sri Sri Gaura Nitai</h2>
+            <p class="text-xs text-amber-800 font-semibold mb-3">Inaugurators of Sankirtana Movement</p>
+            <p class="text-stone-600 text-xs leading-relaxed mb-4">
+              Sri Chaitanya Mahaprabhu and Lord Nityananda Prabhu, arms raised in pure divine ecstasy, distributing the supreme treasure of Krishna Prema freely to every living soul.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-amber-100 flex items-center justify-between">
+            <button class="pushpanjali-trigger text-xs text-amber-700 hover:text-amber-900 font-bold flex items-center">
+              <span>🌸 Shower Pushpanjali</span>
+            </button>
+            <a href="seva.html" class="text-xs bg-amber-100 text-amber-900 hover:bg-amber-200 px-3 py-1.5 rounded-md font-semibold">Offer Bhoga</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deity 3: Sri Sri Jagannatha, Baladeva & Subhadra -->
+      <div class="devotional-card overflow-hidden flex flex-col justify-between">
+        <div class="relative h-80 overflow-hidden bg-stone-900">
+          <img src="https://images.unsplash.com/photo-1626014303757-64673297a7a5?auto=format&fit=crop&w=800&q=80" alt="Sri Sri Jagannatha Baladeva Subhadra" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-lg text-amber-300 text-xs font-bold">
+            Lord of the Universe
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h2 class="text-2xl font-bold font-serif text-stone-900 mb-2">Sri Sri Jagannatha Deva</h2>
+            <p class="text-xs text-amber-800 font-semibold mb-3">Baladeva & Subhadra Maharani</p>
+            <p class="text-stone-600 text-xs leading-relaxed mb-4">
+              With large lotus eyes overflowing with unbounded compassion, Lord Jagannatha bestows liberation on anyone who beholds His transcendental face and accepts His Mahaprasadam.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-amber-100 flex items-center justify-between">
+            <button class="pushpanjali-trigger text-xs text-amber-700 hover:text-amber-900 font-bold flex items-center">
+              <span>🌸 Shower Pushpanjali</span>
+            </button>
+            <a href="seva.html" class="text-xs bg-amber-100 text-amber-900 hover:bg-amber-200 px-3 py-1.5 rounded-md font-semibold">Rathayatra Seva</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deity 4: Lord Sri Narasimhadeva -->
+      <div class="devotional-card overflow-hidden flex flex-col justify-between">
+        <div class="relative h-80 overflow-hidden bg-stone-900">
+          <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=800&q=80" alt="Lord Sri Narasimhadeva" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-lg text-amber-300 text-xs font-bold">
+            Protector of Devotees
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h2 class="text-2xl font-bold font-serif text-stone-900 mb-2">Lord Sri Narasimhadeva</h2>
+            <p class="text-xs text-amber-800 font-semibold mb-3">Half-Man Half-Lion Avatar</p>
+            <p class="text-stone-600 text-xs leading-relaxed mb-4">
+              Worshiped for protection from all material and spiritual impediments. Daily lamps and fragrant tulasi leaves offered for the protection of the congregation.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-amber-100 flex items-center justify-between">
+            <button class="pushpanjali-trigger text-xs text-amber-700 hover:text-amber-900 font-bold flex items-center">
+              <span>🌸 Shower Pushpanjali</span>
+            </button>
+            <a href="seva.html" class="text-xs bg-amber-100 text-amber-900 hover:bg-amber-200 px-3 py-1.5 rounded-md font-semibold">Narasimha Kavacha</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deity 5: Srila Prabhupada Murti -->
+      <div class="devotional-card overflow-hidden flex flex-col justify-between">
+        <div class="relative h-80 overflow-hidden bg-stone-900">
+          <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="Srila Prabhupada Murti" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-lg text-amber-300 text-xs font-bold">
+            Founder-Acharya
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h2 class="text-2xl font-bold font-serif text-stone-900 mb-2">Srila Prabhupada</h2>
+            <p class="text-xs text-amber-800 font-semibold mb-3">Guru-Parampara Acharya</p>
+            <p class="text-stone-600 text-xs leading-relaxed mb-4">
+              Daily Guru Puja is performed with loving devotion every morning at 7:15 AM, offering arati, flowers, and homage to our beloved eternal spiritual master.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-amber-100 flex items-center justify-between">
+            <button class="pushpanjali-trigger text-xs text-amber-700 hover:text-amber-900 font-bold flex items-center">
+              <span>🌸 Shower Pushpanjali</span>
+            </button>
+            <a href="prabhupada.html" class="text-xs bg-amber-100 text-amber-900 hover:bg-amber-200 px-3 py-1.5 rounded-md font-semibold">His Life & Mission</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Aarti Timings Reminder Card -->
+      <div class="bg-gradient-to-br from-amber-700 to-amber-900 text-white rounded-2xl p-8 flex flex-col justify-between shadow-lg">
+        <div>
+          <span class="text-amber-300 text-xs font-bold uppercase tracking-widest block mb-2">Darshan Guidelines</span>
+          <h2 class="text-2xl font-bold font-serif mb-4">Temple Darshan Hours</h2>
+          <ul class="text-xs space-y-3 text-amber-100">
+            <li class="flex justify-between border-b border-amber-600/50 pb-2">
+              <span>Morning Darshan:</span>
+              <strong class="text-white">04:30 AM – 01:00 PM</strong>
+            </li>
+            <li class="flex justify-between border-b border-amber-600/50 pb-2">
+              <span>Altar Resting (Closed):</span>
+              <span class="text-amber-300">01:00 PM – 04:15 PM</span>
+            </li>
+            <li class="flex justify-between border-b border-amber-600/50 pb-2">
+              <span>Evening Darshan:</span>
+              <strong class="text-white">04:30 PM – 09:00 PM</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="pt-6">
+          <a href="visit.html" class="block w-full py-3 bg-white text-stone-900 text-center rounded-xl font-bold text-xs uppercase tracking-wider hover:bg-amber-50 shadow">
+            Plan Your Temple Visit
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Sacred Footer -->
+  <footer class="bg-stone-950 text-stone-400 py-12 border-t-2 border-amber-600 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        © 2026 ISKCON Jhargram • Sri Sri Radha Madhava Mandir, West Bengal.
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://www.facebook.com/share/18m7z58HY5/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400">Facebook</a>
+        <span>•</span>
+        <a href="https://share.google/XQ5Nl7fRtkdQHCqpt" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400">Google Location</a>
+        <span>•</span>
+        <a href="admin.html" class="hover:text-amber-400">Admin Portal</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

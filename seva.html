@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seva & Annadanam | ISKCON Jhargram</title>
+  <meta name="description" content="Offer sacred seva, Annadanam food relief, Gau Seva, and Deity worship at ISKCON Jhargram. Instant printable donation receipt generator.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-vedic-pattern text-stone-800 antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- Dynamic Live Announcement Banner -->
+  <div id="top-announcement-banner" class="bg-stone-900 text-amber-100 border-b border-amber-900/40"></div>
+
+  <!-- Top Utilities Bar -->
+  <div class="bg-stone-950 text-stone-300 text-xs py-2 px-4 border-b border-amber-900/30">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center text-amber-400 font-medium">
+          <svg class="w-3.5 h-3.5 mr-1 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+          Jhargram, West Bengal, India
+        </span>
+        <span class="text-stone-500">|</span>
+        <span class="text-stone-400">Devotional Seva & Annadanam</span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <a href="https://www.facebook.com/share/18m7z58HY5/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400">Facebook</a>
+        <span class="text-stone-600">•</span>
+        <a href="https://share.google/XQ5Nl7fRtkdQHCqpt" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400">Google Location</a>
+        <span class="text-stone-600">•</span>
+        <a href="admin.html" class="text-amber-400/90 font-semibold">Admin</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Sacred Navigation -->
+  <header class="sticky top-0 z-50 bg-[#FCF9F2]/95 backdrop-blur-md border-b border-amber-200/70 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-11 h-11 rounded-full bg-amber-600 flex items-center justify-center text-white font-serif font-bold text-lg shadow">ॐ</div>
+          <div>
+            <span class="block text-xl font-black font-serif text-stone-900">ISKCON JHARGRAM</span>
+            <span class="block text-[10px] text-stone-500 font-medium">Devotional Seva Portal</span>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center space-x-1 font-medium text-stone-700 text-sm">
+          <a href="index.html" class="px-3 py-2 hover:text-amber-800 transition-colors">Home</a>
+          <a href="darshan.html" class="px-3 py-2 hover:text-amber-800 transition-colors">Daily Darshan</a>
+          <a href="events.html" class="px-3 py-2 hover:text-amber-800 transition-colors">Festivals & Events</a>
+          <a href="prabhupada.html" class="px-3 py-2 hover:text-amber-800 transition-colors">Srila Prabhupada</a>
+          <a href="seva.html" class="px-3 py-2 text-amber-800 font-bold border-b-2 border-amber-600">Seva & Offerings</a>
+          <a href="visit.html" class="px-3 py-2 hover:text-amber-800 transition-colors">Plan Your Visit</a>
+        </nav>
+        <div class="hidden sm:flex items-center space-x-3">
+          <a href="#seva-form" class="kesariya-gradient-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider shadow">
+            Book Seva Now
+          </a>
+        </div>
+        <div class="lg:hidden flex items-center">
+          <button id="mobile-menu-toggle" class="p-2 rounded-lg text-stone-700 hover:text-amber-800 touch-target" aria-label="Toggle Navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-nav-drawer" class="hidden lg:hidden bg-[#FAF5EC] border-b border-amber-200 px-4 pt-3 pb-6 space-y-3">
+      <a href="index.html" class="block px-3 py-2 rounded-md font-medium text-stone-700">Home</a>
+      <a href="darshan.html" class="block px-3 py-2 rounded-md font-medium text-stone-700">Daily Deity Darshan</a>
+      <a href="events.html" class="block px-3 py-2 rounded-md font-medium text-stone-700">Festivals & Events</a>
+      <a href="prabhupada.html" class="block px-3 py-2 rounded-md font-medium text-stone-700">Srila Prabhupada</a>
+      <a href="seva.html" class="block px-3 py-2 rounded-md font-bold text-amber-900 bg-amber-100">Seva & Offerings</a>
+      <a href="visit.html" class="block px-3 py-2 rounded-md font-medium text-stone-700">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="bg-temple-dark text-white py-14 border-b-4 border-amber-500 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+      <span class="text-amber-400 text-xs font-bold uppercase tracking-widest block">Sacred Devotional Offerings</span>
+      <h1 class="text-3xl sm:text-5xl font-black font-serif">Seva & Annadanam</h1>
+      <p class="text-stone-300 text-sm max-w-2xl mx-auto font-light">
+        "Whatever you do, whatever you eat, whatever you offer or give away, do that as an offering to Me." — Bhagavad Gita 9.27
+      </p>
+    </div>
+  </section>
+
+  <!-- Seva Opportunities Cards -->
+  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      
+      <!-- Seva 1: Annadanam -->
+      <div class="devotional-card p-6 flex flex-col justify-between">
+        <div>
+          <div class="h-44 rounded-xl overflow-hidden mb-4 bg-stone-100">
+            <img src="https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=600&q=80" alt="Annadanam Food for Life" class="w-full h-full object-cover" />
+          </div>
+          <div class="text-xs text-amber-800 font-bold uppercase tracking-wider mb-1">Food Relief • Food for Life</div>
+          <h3 class="text-xl font-bold font-serif text-stone-900 mb-2">Annadanam Mahaprasadam</h3>
+          <p class="text-xs text-stone-600 leading-relaxed mb-4">
+            Feed hungry children, needy families, and visiting pilgrims in Jhargram with sanctified pure vegetarian hot meals.
+          </p>
+          <div class="text-xs font-semibold text-amber-900 bg-amber-50 p-2.5 rounded-lg border border-amber-200">
+            Suggested Seva: ₹1,500 (50 Meals) • ₹3,000 (100 Meals)
+          </div>
+        </div>
+        <div class="pt-4">
+          <button onclick="selectSevaType('Annadanam (Food for Life)', 1500)" class="w-full py-2.5 rounded-lg bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs shadow-sm">
+            Select Annadanam Seva
+          </button>
+        </div>
+      </div>
+
+      <!-- Seva 2: Gau Seva -->
+      <div class="devotional-card p-6 flex flex-col justify-between">
+        <div>
+          <div class="h-44 rounded-xl overflow-hidden mb-4 bg-stone-100">
+            <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=600&q=80" alt="Gau Seva Cow Protection" class="w-full h-full object-cover" />
+          </div>
+          <div class="text-xs text-amber-800 font-bold uppercase tracking-wider mb-1">Goshala Care</div>
+          <h3 class="text-xl font-bold font-serif text-stone-900 mb-2">Gau Seva (Cow Protection)</h3>
+          <p class="text-xs text-stone-600 leading-relaxed mb-4">
+            Protect and care for mother cows with fresh green fodder, clean shelter, jaggery, and veterinary medical attention.
+          </p>
+          <div class="text-xs font-semibold text-amber-900 bg-amber-50 p-2.5 rounded-lg border border-amber-200">
+            Suggested Seva: ₹1,100 (1 Day Fodder) • ₹5,100 (Monthly Care)
+          </div>
+        </div>
+        <div class="pt-4">
+          <button onclick="selectSevaType('Gau Seva (Cow Protection)', 1100)" class="w-full py-2.5 rounded-lg bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs shadow-sm">
+            Select Gau Seva
+          </button>
+        </div>
+      </div>
+
+      <!-- Seva 3: Deity Pushpa & Alankara -->
+      <div class="devotional-card p-6 flex flex-col justify-between">
+        <div>
+          <div class="h-44 rounded-xl overflow-hidden mb-4 bg-stone-100">
+            <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=600&q=80" alt="Deity Alankara Seva" class="w-full h-full object-cover" />
+          </div>
+          <div class="text-xs text-amber-800 font-bold uppercase tracking-wider mb-1">Altar Worship</div>
+          <h3 class="text-xl font-bold font-serif text-stone-900 mb-2">Deity Alankara & Flower Seva</h3>
+          <p class="text-xs text-stone-600 leading-relaxed mb-4">
+            Sponsor fresh fragrant garlands, pure cow ghee lamps, incense, and festive attire for Sri Sri Radha Madhava.
+          </p>
+          <div class="text-xs font-semibold text-amber-900 bg-amber-50 p-2.5 rounded-lg border border-amber-200">
+            Suggested Seva: ₹1,008 (Daily Garlands) • ₹5,000 (Raj Bhoga)
+          </div>
+        </div>
+        <div class="pt-4">
+          <button onclick="selectSevaType('Deity Alankara & Flower Seva', 1008)" class="w-full py-2.5 rounded-lg bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs shadow-sm">
+            Select Deity Seva
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Interactive Seva Booking & Dedicated Receipt Generator Form -->
+    <div id="seva-form" class="max-w-3xl mx-auto bg-white rounded-3xl p-8 sm:p-10 border-2 border-amber-200 shadow-xl">
+      <div class="text-center mb-8">
+        <span class="text-amber-800 text-xs font-bold uppercase tracking-widest block mb-1">Devotional Dedication</span>
+        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-stone-900">Book Seva & Generate Blessing Certificate</h2>
+        <div class="w-16 h-1 bg-amber-500 mx-auto my-3 rounded-full"></div>
+        <p class="text-xs text-stone-500">
+          Offer seva in your name or dedicated to loved ones on birthdays, anniversaries, or remembrance (Shraddha).
+        </p>
+      </div>
+
+      <form id="devotional-seva-form" class="space-y-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="seva-name" class="block text-xs font-bold text-stone-700 mb-1">Devotee Full Name *</label>
+            <input type="text" id="seva-name" required placeholder="e.g. Radheshyam Das" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none" />
+          </div>
+          <div>
+            <label for="seva-phone" class="block text-xs font-bold text-stone-700 mb-1">WhatsApp / Phone Number *</label>
+            <input type="tel" id="seva-phone" required placeholder="e.g. +91 98765 43210" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="seva-type" class="block text-xs font-bold text-stone-700 mb-1">Select Seva Category *</label>
+            <select id="seva-type" required class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white">
+              <option value="Annadanam (Food for Life)">Annadanam (Food for Life Prasadam)</option>
+              <option value="Gau Seva (Cow Protection)">Gau Seva (Goshala Care)</option>
+              <option value="Deity Alankara & Flower Seva">Deity Alankara & Fresh Flowers</option>
+              <option value="Jhargram Rathayatra Seva">Jhargram Sri Jagannath Rathayatra</option>
+              <option value="Sunday Love Feast Sponsor">Sunday Love Feast Sponsorship</option>
+              <option value="Temple Construction & Maintenance">Mandir Renovation & Maintenance</option>
+            </select>
+          </div>
+          <div>
+            <label for="seva-amount" class="block text-xs font-bold text-stone-700 mb-1">Seva Amount (INR ₹) *</label>
+            <input type="number" id="seva-amount" required value="1500" min="100" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none font-bold" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="seva-occasion" class="block text-xs font-bold text-stone-700 mb-1">Occasion / Dedication</label>
+            <input type="text" id="seva-occasion" placeholder="e.g. Birthday, Anniversary, In Memory of Parents" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none" />
+          </div>
+          <div>
+            <label for="seva-gotra" class="block text-xs font-bold text-stone-700 mb-1">Gotra / Rashi (Optional for Archana)</label>
+            <input type="text" id="seva-gotra" placeholder="e.g. Kashyapa / Sandilya" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none" />
+          </div>
+        </div>
+
+        <div>
+          <label for="seva-prayer" class="block text-xs font-bold text-stone-700 mb-1">Personal Devotional Prayer (Sankalpa)</label>
+          <textarea id="seva-prayer" rows="2" placeholder="Write any specific prayers to be offered at the lotus feet of Sri Sri Radha Madhava..." class="w-full px-4 py-2 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider kesariya-gradient-btn shadow-lg">
+          Generate Devotional Seva Receipt & Certificate →
+        </button>
+      </form>
+
+      <!-- Printable Devotional Receipt Display (Hidden until form submitted) -->
+      <div id="printable-receipt" class="hidden mt-8 p-6 sm:p-8 bg-amber-50/70 border-2 border-dashed border-amber-400 rounded-2xl relative">
+        <div class="text-center space-y-1 mb-6 border-b border-amber-300 pb-4">
+          <div class="text-2xl font-bold font-serif text-stone-900">ISKCON JHARGRAM</div>
+          <div class="text-xs font-bold text-amber-900">SRI SRI RADHA MADHAVA MANDIR</div>
+          <div class="text-[11px] text-stone-500">Jhargram, West Bengal, India • Reg. Under ISKCON Mayapur</div>
+          <div class="inline-block px-3 py-1 bg-amber-200 text-amber-900 rounded-full text-[10px] font-bold uppercase tracking-wider mt-2">
+            Sacred Seva Acknowledgment & Blessings
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 text-xs text-stone-700 mb-6">
+          <div>
+            <span class="text-stone-400 block text-[10px] uppercase">Receipt No:</span>
+            <strong id="receipt-id" class="text-stone-900 font-mono">ISK-JHG-2026-0001</strong>
+          </div>
+          <div class="text-right">
+            <span class="text-stone-400 block text-[10px] uppercase">Date & Time:</span>
+            <strong id="receipt-date" class="text-stone-900">18 Nov 2026</strong>
+          </div>
+          <div>
+            <span class="text-stone-400 block text-[10px] uppercase">Devotee Name:</span>
+            <strong id="receipt-name" class="text-amber-900 text-sm font-serif">Radheshyam Das</strong>
+          </div>
+          <div class="text-right">
+            <span class="text-stone-400 block text-[10px] uppercase">Seva Amount:</span>
+            <strong id="receipt-amount" class="text-emerald-700 text-base font-bold">₹1,500</strong>
+          </div>
+          <div>
+            <span class="text-stone-400 block text-[10px] uppercase">Seva Category:</span>
+            <strong id="receipt-type" class="text-stone-900">Annadanam</strong>
+          </div>
+          <div class="text-right">
+            <span class="text-stone-400 block text-[10px] uppercase">Occasion / Sankalpa:</span>
+            <strong id="receipt-occasion" class="text-stone-900">Special Prayers</strong>
+          </div>
+        </div>
+
+        <div class="p-3 bg-white rounded-xl border border-amber-200 text-center mb-6">
+          <p class="font-sanskrit text-amber-900 text-xs font-bold">
+            ॥ श्री राधामाधवाभ्यां नमः ॥<br>
+            हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे । हरे राम हरे राम राम राम हरे हरे ॥
+          </p>
+          <p class="text-[10px] text-stone-500 italic mt-1">
+            "May the Supreme Lord Sri Krishna and Srimati Radharani shower Their unconditional transcendental mercy and protection upon you and your family."
+          </p>
+        </div>
+
+        <div class="flex items-center justify-between text-[11px] text-stone-500 border-t border-amber-300 pt-3">
+          <span>Official Temple Seal: <strong class="text-amber-800">ISKCON Jhargram</strong></span>
+          <button onclick="window.print()" class="px-4 py-1.5 bg-stone-900 hover:bg-stone-800 text-white rounded text-xs font-bold">
+            🖨️ Print / Save PDF
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Temple Bank Transfer Details -->
+    <div class="mt-16 max-w-2xl mx-auto bg-[#FAF5EC] rounded-2xl p-6 border border-amber-200 text-center">
+      <div class="font-serif font-bold text-stone-900 text-base mb-2">Direct Bank / UPI Seva Transfer</div>
+      <p class="text-xs text-stone-600 mb-4">
+        You may also transfer seva contributions directly to the ISKCON Jhargram official temple account and share the receipt on WhatsApp:
+      </p>
+      <div class="bg-white p-4 rounded-xl border border-amber-200 text-left text-xs space-y-1.5 font-mono">
+        <div><strong class="font-sans text-stone-500">Account Name:</strong> ISKCON JHARGRAM</div>
+        <div><strong class="font-sans text-stone-500">Bank:</strong> State Bank of India (SBI), Jhargram Branch</div>
+        <div><strong class="font-sans text-stone-500">UPI ID / VPA:</strong> iskcon.jhargram@sbi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sacred Footer -->
+  <footer class="bg-stone-950 text-stone-400 py-12 border-t-2 border-amber-600 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        © 2026 ISKCON Jhargram • Seva & Philanthropy Division.
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://www.facebook.com/share/18m7z58HY5/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400">Facebook</a>
+        <span>•</span>
+        <a href="https://share.google/XQ5Nl7fRtkdQHCqpt" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400">Google Location</a>
+        <span>•</span>
+        <a href="admin.html" class="hover:text-amber-400">Admin Login</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    function selectSevaType(type, amount) {
+      document.getElementById('seva-type').value = type;
+      document.getElementById('seva-amount').value = amount;
+      document.getElementById('seva-form').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.getElementById('devotional-seva-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('seva-name').value;
+      const phone = document.getElementById('seva-phone').value;
+      const type = document.getElementById('seva-type').value;
+      const amount = document.getElementById('seva-amount').value;
+      const occasion = document.getElementById('seva-occasion').value || 'Devotional Offering';
+      const prayer = document.getElementById('seva-prayer').value;
+      
+      const receiptId = 'ISK-JHG-' + Math.floor(100000 + Math.random() * 900000);
+      const dateStr = new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+
+      document.getElementById('receipt-id').textContent = receiptId;
+      document.getElementById('receipt-date').textContent = dateStr;
+      document.getElementById('receipt-name').textContent = name;
+      document.getElementById('receipt-amount').textContent = '₹' + amount;
+      document.getElementById('receipt-type').textContent = type;
+      document.getElementById('receipt-occasion').textContent = occasion;
+
+      const receiptEl = document.getElementById('printable-receipt');
+      receiptEl.classList.remove('hidden');
+      receiptEl.scrollIntoView({ behavior: 'smooth' });
+
+      // Save submission to localStorage for admin viewer
+      const submissions = JSON.parse(localStorage.getItem('iskcon_seva_submissions') || '[]');
+      submissions.unshift({ receiptId, name, phone, type, amount, occasion, prayer, date: dateStr });
+      localStorage.setItem('iskcon_seva_submissions', JSON.stringify(submissions));
+
+      triggerPushpanjali();
+    });
+  </script>
+</body>
+</html>
